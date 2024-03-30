@@ -15,8 +15,14 @@ export class BlogListComponent implements OnInit {
   constructor(private blogsService: BlogsDataService) {}
 
   ngOnInit(): void {
+    this.fetchData();
+  }
+
+  fetchData() {
     this.blogsService.getBlogs().subscribe(
       (res) => {
+        console.log('aa');
+
         this.blogList = res;
         this.loadingFlag = false;
       },
@@ -25,5 +31,9 @@ export class BlogListComponent implements OnInit {
         this.loadingFlag = false;
       }
     );
+  }
+
+  onRetry() {
+    this.fetchData();
   }
 }

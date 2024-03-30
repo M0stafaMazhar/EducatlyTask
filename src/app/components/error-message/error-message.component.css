@@ -3,5 +3,15 @@
   border: 1px solid #fcc2c3;
   float: left;
   padding: 20px 30px;
-  margin: 0, auto;
+}
+
+button {
+  background-color: lightgray;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: center;
 }
