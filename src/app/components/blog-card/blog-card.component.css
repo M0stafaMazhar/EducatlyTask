@@ -1,0 +1,116 @@
+.blog-card {
+  cursor: pointer;
+  background: white;
+  display: grid;
+  gap: 10px;
+  width: auto;
+  height: 580px;
+  padding: 24px 24px 32px 24px;
+  opacity: 0px;
+  box-shadow: 0px 4px 6px -2px #10182808;
+  box-shadow: 0px 12px 16px -4px #10182814;
+}
+
+.blog-card img {
+  width: fill;
+  height: 240px;
+  gap: 0px;
+  opacity: 0px;
+  margin-bottom: 1px;
+}
+
+.card-content {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0px;
+}
+
+.card-heading {
+  width: auto;
+  height: auto;
+  gap: 12px;
+  opacity: 0px;
+}
+
+.card-heading h5 {
+  font-family: "Inter", sans-serif; /* Use Inter font family */
+  font-size: 24px; /* Set font size to 24 pixels */
+  font-weight: 600; /* Set font weight to semibold */
+  line-height: 32px; /* Set line height to 32 pixels */
+  text-align: left; /* Align text to the left */
+}
+
+.avatar {
+  width: auto; /* Set width to 135 pixels */
+  height: 40px; /* Set height to 40 pixels */
+  display: flex; /* Use flexbox layout */
+  align-items: center;
+  gap: 12px; /* Set gap between elements to 12 pixels */
+}
+
+.avatar img {
+  width: 40px; /* Set width to a fixed value of 40 pixels */
+  height: 40px; /* Set height to a fixed value of 40 pixels */
+  gap: 0px; /* Set gap between elements to 0 pixels */
+  border-radius: 50%; /* Set border-radius for rounded corners */
+}
+
+.avatar-text {
+  height: 40px;
+}
+
+.avatar-text p {
+  /* Style for Text sm/Medium */
+  color: #101828;
+  margin: 0;
+  /* Style for Text sm/Medium */
+  font-family: "Inter", sans-serif; /* Use Inter font family */
+  font-size: 14px; /* Set font size to 14 pixels */
+  font-weight: 500; /* Set font weight to medium */
+  line-height: 20px; /* Set line height to 20 pixels */
+  text-align: left; /* Align text to the left */
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    width: 343px;
+    height: 530px;
+    gap: 32px;
+    padding: 24px;
+    opacity: 0px;
+  }
+
+  .blog-card img {
+    height: 200px;
+  }
+
+  .card-content {
+    width: 295px;
+    height: 242px;
+    gap: 0px;
+    justify-content: space-between;
+    opacity: 0px;
+  }
+
+  .card-heading {
+    width: 295px;
+    height: 146px;
+    gap: 12px;
+    opacity: 0px;
+  }
+
+  .avatar {
+    width: auto;
+    height: 40px;
+    gap: 12px;
+    opacity: 0px;
+  }
+
+  .avatar img {
+    width: 40px; /* Set width to a fixed value of 40 pixels */
+    height: 40px;
+  }
+}

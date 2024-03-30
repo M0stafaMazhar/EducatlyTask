@@ -1,0 +1,33 @@
+<!-- <div class="card">
+  <img src="{{ blogData.cover_image }}" alt="" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{ blogData.title }}</h5>
+    <p class="card-text">{{ blogData.user.name }}</p>
+    <p class="card-text">{{ blogData.readable_publish_date }}</p>
+  </div>
+</div> -->
+
+<div class="blog-card" (click)="onClick()">
+  <img
+    src="{{ blogData.cover_image }}"
+    alt="{{ blogData.title }}"
+    class="card-img-top"
+  />
+  <div class="card-content">
+    <div class="card-heading">
+      <h5>{{ blogData.title }}</h5>
+    </div>
+    <div class="avatar">
+      <img
+        src="{{ blogData.user.profile_image }}"
+        alt="{{ blogData.user.name }}"
+      />
+      <div class="avatar-text">
+        <p>{{ blogData.user.name }}</p>
+        <p style="color: #667085; font-weight: 400">
+          {{ blogData.readable_publish_date }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

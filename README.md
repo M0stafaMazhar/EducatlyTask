@@ -1,27 +1,81 @@
-# EducatlyTask
+# Angular Blog Posts List Page
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+## Instructions to Run the Project Locally:
 
-## Development server
+1. Ensure you have Node.js installed on your local machine. You can download it from [here](https://nodejs.org/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Clone the project repository to your local machine using the following command:
 
-## Code scaffolding
+   ```
+   git clone <repository-url>
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Navigate to the project directory:
 
-## Build
+   ```
+   cd angular-blog-posts-list-page
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Install project dependencies:
 
-## Running unit tests
+   ```
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. Start the development server:
 
-## Running end-to-end tests
+   ```
+   ng serve
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. Open your web browser and navigate to `http://localhost:4200` to view the project.
 
-## Further help
+## Description:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project features a blog posts list page where each blog is represented by a blog card component. The project is integrated with the Dev.to API to fetch blog articles. It includes loading indicators and error messages in separate components to enhance user experience. Additionally, it utilizes the ngx-pagination library for pagination of blog posts.
+
+## Project Structure:
+
+- `src/`: Contains the source code of the Angular project.
+  - `app/`: Contains Angular components, services, and modules.
+    - `components/`: Contains reusable components.
+      - `blog-card/`: Component representing a single blog card.
+      - `loading-indicator/`: Component for displaying loading indicator.
+      - `error-message/`: Component for displaying error messages.
+    - `services/`: Contains Angular services for API integration.
+    - `models/`: Contains data models/interfaces.
+    - `app.component.html`: Main HTML template file.
+    - `app.component.ts`: Main TypeScript file for the root component.
+    - `app.module.ts`: Main Angular module file.
+
+## Technologies Used:
+
+- Angular 17
+- TypeScript
+- HTML
+- CSS
+- ngx-pagination
+
+## API Integration:
+
+The project is integrated with the Dev.to API to fetch blog articles. It utilizes Angular services to handle API requests and responses.
+
+## Components:
+
+- **Blog Card Component:** Represents a single blog card. It displays information such as the blog title, author, and publish date.
+
+- **Loading Indicator Component:** Displays a loading indicator while data is being fetched from the API.
+
+- **Error Message Component:** Displays error messages if there is an issue fetching data from the API.
+
+## Additional Features:
+
+- Responsive Design: The project is responsive and adapts to different screen sizes for optimal viewing experience.
+
+- Error Handling: Error messages are displayed if there are any issues fetching data from the API.
+
+- Pagination: The ngx-pagination library is used for pagination of blog posts, allowing users to navigate through multiple pages of blog posts.
+
+## Contributing:
+
+Contributions are welcome! Feel free to submit issues or pull requests if you encounter any problems or have suggestions for improvements.

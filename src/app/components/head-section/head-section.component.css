@@ -1,0 +1,50 @@
+.head-section {
+  width: auto;
+  height: auto;
+  margin-bottom: 96px;
+  padding: 96px, 0px, 0px, 0px;
+}
+
+.cont h5 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #42307d;
+  word-wrap: break-word;
+}
+
+.cont {
+  width: auto;
+}
+
+.cont p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #42307d;
+  word-wrap: break-word;
+}
+
+.input-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.input-cont input {
+  width: 320px;
+}
+
+@media screen and (max-width: 750px) {
+  .head-section {
+    width: 340px;
+  }
+
+  .input-cont input {
+    width: auto; /* Set input width to auto */
+  }
+}

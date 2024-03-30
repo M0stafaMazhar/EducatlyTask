@@ -1,0 +1,24 @@
+<div class="error-cont">
+  <app-loading-spiner *ngIf="loadingFlag"></app-loading-spiner>
+  <app-error-message *ngIf="errFlag"></app-error-message>
+  <h3 *ngIf="!loadingFlag && !errFlag && !blogList.length">No Blogs to show</h3>
+</div>
+<div class="con1" *ngIf="!loadingFlag && !errFlag">
+  <div class="cont">
+    <div class="r">
+      <app-blog-card
+        *ngFor="
+          let blog of blogList
+            | paginate : { itemsPerPage: 6, currentPage: page }
+        "
+        [blogData]="blog"
+      ></app-blog-card>
+    </div>
+  </div>
+  <div class="pagination">
+    <pagination-controls
+      [previousLabel]="'Prev'"
+      (pageChange)="page = $event"
+    ></pagination-controls>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.sec {
+  background-color: #f9f5ff;
+  display: grid;
+  width: auto;
+  height: auto;
+  gap: 0px;
+  opacity: 0px;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+}
